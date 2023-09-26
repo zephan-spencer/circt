@@ -40,13 +40,4 @@ add_circt_dialect_library(CIRCTHW
   MLIRInferTypeOpInterface
 )
 
-add_circt_library(CIRCTHWReductions
-  HWReductions.cpp
-
-  LINK_LIBS PUBLIC
-  CIRCTReduceLib
-  CIRCTHW
-  MLIRIR
-)
-
 add_subdirectory(Transforms)
